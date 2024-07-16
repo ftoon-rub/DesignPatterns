@@ -7,9 +7,13 @@
     internal class Originator
     {
         private string Content;
-        public Originator(string Content)
+        /// <summary>
+        /// change the currnet content
+        /// </summary>
+        /// <param name="content"></param>
+        public void SetContent(string content)
         {
-            this.Content = Content;
+            this.Content = content;
         }
         /// <summary>
         /// create new state (memento) with the currnet content
