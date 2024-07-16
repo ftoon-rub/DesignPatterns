@@ -1,4 +1,6 @@
-﻿namespace DesignPatterns.MementoPattern
+﻿using Newtonsoft.Json;
+
+namespace DesignPatterns.MementoPattern
 {
     /// <summary>
     /// it has the list of the history
@@ -15,6 +17,7 @@
         public void Save(Originator originator)
         {
             statesHistory.Push(originator.CreateState());
+            Console.WriteLine($"Caretaker Saveing currnet state");
         }
         /// <summary>
         /// pop the last state from the history and restore it as currnet states
@@ -24,7 +27,13 @@
         {
             if (statesHistory.Count > 0)
             {
-                originator.Restore(statesHistory.Pop());
+                var currentStatusMemento = statesHistory.Pop();
+                originator.Restore(currentStatusMemento);
+                Console.WriteLine($"Undo And the Currnet Status: {currentStatusMemento.GetState()}");
+
+                Console.Write($"stack history:");
+                foreach (var item in statesHistory)
+                    Console.Write($"{item.GetState()}, ");
             }
             else
             {

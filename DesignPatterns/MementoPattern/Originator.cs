@@ -14,6 +14,7 @@
         public void SetContent(string content)
         {
             this.Content = content;
+            Console.WriteLine($"Originator Set Current Text: {this.Content}");
         }
         /// <summary>
         /// create new state (memento) with the currnet content
@@ -21,6 +22,7 @@
         /// <returns></returns>
         public Memento CreateState()
         {
+            Console.WriteLine($"Originator createing memento state with content {this.Content}...");
             return new Memento(this.Content);
         }
         /// <summary>
@@ -30,6 +32,7 @@
         public void Restore(Memento memento)
         {
             Content = memento.GetState();
+            Console.WriteLine($"Originator Restored Text: {Content}");
         }
     }
 }
