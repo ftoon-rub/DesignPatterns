@@ -11,7 +11,10 @@
         {
             this.Content = Content;
         }
-
+        /// <summary>
+        /// get the current states
+        /// </summary>
+        /// <returns></returns>
         public string GetState()
         {
             return this.Content;
