@@ -6,7 +6,7 @@
     /// </summary>
     internal class Originator
     {
-        private string Content;
+        private string Content = string.Empty;
         /// <summary>
         /// change the currnet content
         /// </summary>
