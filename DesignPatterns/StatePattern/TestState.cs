@@ -25,14 +25,14 @@ namespace DesignPatterns.StatePattern
             AbuseContext.Click ();
             #endregion
 
-            //#region ex3
-            //Console.WriteLine("------------------Ex3--------------------");
-            //DirectionService directionService = new ();
-            //directionService.directionState = new DrivingState ();
-            //directionService.GetDirection();
-            //directionService.directionState = new WalkingState ();
-            //directionService.GetDirection ();
-            //#endregion
+            #region ex3
+            Console.WriteLine("------------------Ex3--------------------");
+            DirectionService directionService = new();
+            directionService.directionState = new DrivingState();
+            directionService.GetDirection();
+            directionService.directionState = new WalkingState();
+            directionService.GetDirection();
+            #endregion
         }
     }
 }
