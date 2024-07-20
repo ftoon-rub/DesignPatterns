@@ -4,7 +4,7 @@ using DesignPatterns.StatePattern.Exercises.Ex4;
 
 namespace DesignPatterns.StatePattern
 {
-    internal class TestState
+    internal class TestState : ITestState
     {
         public void Test()
         {

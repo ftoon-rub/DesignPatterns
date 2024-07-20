@@ -1,6 +1,6 @@
 ﻿namespace DesignPatterns.MementoPattern
 {
-    internal class TestMemento
+    internal class TestMemento : ITestState
     {
         public void Test()
         {
