@@ -3,16 +3,20 @@
     internal abstract class Task
     {
         private AuditTrail _auditTrail;
-        protected Task(AuditTrail auditTrail)
+        public Task()
+        {
+            _auditTrail = new AuditTrail();
+        }
+        public Task(AuditTrail auditTrail)
         {
             _auditTrail = auditTrail;
         }
         public void execute()
         {
             _auditTrail.record();
-
+              
             doExecute();
-            Console.WriteLine("Generate Report");
+            Console.WriteLine("Task solution");
         }
 
         public abstract void doExecute();
