@@ -4,6 +4,7 @@ using DesignPatterns.IteratorPattern;
 using DesignPatterns.MementoPattern;
 using DesignPatterns.StatePattern;
 using DesignPatterns.StrategyPattern;
+using DesignPatterns.TemplateMethodPattern;
 
 TestDesignPatterns test = new ();
 
@@ -24,6 +25,12 @@ Console.WriteLine("\n\n");
 
 Console.WriteLine("******************TestStrategy********************");
 test.State = new TestStrategy();
+test.TestPatterns();
+Console.WriteLine("\n\n");
+
+
+Console.WriteLine("******************TestTemplateMethodPattern********************");
+test.State = new TestTemplateMethodPattern();
 test.TestPatterns();
 Console.WriteLine("\n\n");
 
