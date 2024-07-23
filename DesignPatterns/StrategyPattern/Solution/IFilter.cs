@@ -2,6 +2,6 @@
 {
     internal interface IFilter
     {
-        void Apply();
+        void Apply(string fileName);
     }
 }

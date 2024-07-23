@@ -14,9 +14,10 @@
             _compressor = compressor;
         }
 
-        public void store(compressor fileName)
+        public void store(string fileName)
         {
-            
+            _compressor.Compress(fileName);
+            _filter.Apply(fileName);
         }
     }
 }

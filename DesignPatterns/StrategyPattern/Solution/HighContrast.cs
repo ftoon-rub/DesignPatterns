@@ -5,9 +5,9 @@
     /// </summary>
     internal class HighContrast : IFilter
     {
-        public void Apply()
+        public void Apply(string fileName)
         {
-            throw new NotImplementedException();
+            Console.WriteLine("apply HighContrast");
         }
     }
 }
