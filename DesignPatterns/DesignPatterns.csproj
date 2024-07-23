@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="IteratorPattern\Exercises\" />
     <Folder Include="StatePattern\Exercises\" />
   </ItemGroup>
 
