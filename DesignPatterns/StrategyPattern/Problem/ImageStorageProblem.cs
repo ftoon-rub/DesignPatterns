@@ -1,11 +1,11 @@
 ﻿namespace DesignPatterns.StrategyPattern
 {
-    internal class ImageStorage
+    internal class ImageStorageProblem
     {
         private filter Filter;
         private compressor Compressor;
 
-        public ImageStorage(compressor Compressor, filter Filter)
+        public ImageStorageProblem(compressor Compressor, filter Filter)
         {
             this.Compressor = Compressor;
             this.Filter = Filter;
@@ -24,12 +24,12 @@
                 Console.WriteLine("filter.highContrast");
         }
     }
-    public enum compressor
+    internal enum compressor
     {
         jbeg,
         png
     }
-    public enum filter
+    internal enum filter
     {
         bAndW,
         highContrast
