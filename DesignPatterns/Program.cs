@@ -3,6 +3,7 @@ using DesignPatterns;
 using DesignPatterns.IteratorPattern;
 using DesignPatterns.MementoPattern;
 using DesignPatterns.StatePattern;
+using DesignPatterns.StrategyPattern;
 
 TestDesignPatterns test = new ();
 
@@ -18,6 +19,11 @@ Console.WriteLine("\n\n");
 
 Console.WriteLine("******************TestIterator********************");
 test.State = new TestIterator();
+test.TestPatterns();
+Console.WriteLine("\n\n");
+
+Console.WriteLine("******************TestStrategy********************");
+test.State = new TestStrategy();
 test.TestPatterns();
 Console.WriteLine("\n\n");
 
