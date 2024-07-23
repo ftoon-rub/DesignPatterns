@@ -16,7 +16,6 @@
     <Folder Include="StatePattern\Exercises\" />
     <Folder Include="TemplateMethodPattern\Main\" />
     <Folder Include="TemplateMethodPattern\Exercises\" />
-    <Folder Include="TemplateMethodPattern\Solution\" />
   </ItemGroup>
 
 </Project>
