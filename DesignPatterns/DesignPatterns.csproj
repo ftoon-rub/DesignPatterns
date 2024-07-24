@@ -23,6 +23,9 @@
     <None Update="PatternUmlDiagram\TemplateMethodPattern.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Update="PatternUmlDiagram\TemplateMethodPattern.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

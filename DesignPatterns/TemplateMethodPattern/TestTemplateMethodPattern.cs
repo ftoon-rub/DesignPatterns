@@ -31,7 +31,7 @@ namespace DesignPatterns.TemplateMethodPattern
         public void ViewDiagram()
         {
             string appDomin = AppDomain.CurrentDomain.BaseDirectory;
-            string imagePath = Path.Combine(appDomin, @"PatternUmlDiagram\TemplateMethodPattern.jpg");
+            string imagePath = Path.Combine(appDomin, @"PatternUmlDiagram\TemplateMethodPattern.png");
 
             // Check if the file exists
             if (System.IO.File.Exists(imagePath))
