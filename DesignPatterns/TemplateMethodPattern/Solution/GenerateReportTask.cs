@@ -2,13 +2,10 @@
 {
     internal class GenerateReportTask : Task
     {
-        public GenerateReportTask(AuditTrail auditTrail) : base(auditTrail)
+        //it use the defulte constrator from the base class
+        protected override void doExecute()
         {
-        }
-
-        public override void doExecute()
-        {
-            throw new NotImplementedException();
+            Console.WriteLine("GenerateReportTask solution");
         }
     }
 }

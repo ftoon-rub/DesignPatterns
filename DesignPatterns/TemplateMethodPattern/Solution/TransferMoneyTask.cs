@@ -2,15 +2,14 @@
 {
     internal class TransferMoneyTask : Task
     {
-        private AuditTrail _auditTrail;
-
-        public TransferMoneyTask(AuditTrail auditTrail)
+        // it use the constrator from the base class
+        public TransferMoneyTask(AuditTrail auditTrail) : base(auditTrail)
         {
-            _auditTrail = auditTrail;
         }
-        public override void doExecute()
+
+        protected override void doExecute()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("TransferMoneyTask solution");
         }
     }
 }

@@ -4,7 +4,7 @@
     {
         public void record()
         {
-            Console.WriteLine("audit");
+            Console.WriteLine("audit record");
         }
     }
 }
