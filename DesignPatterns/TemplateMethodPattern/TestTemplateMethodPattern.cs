@@ -1,10 +1,13 @@
-﻿namespace DesignPatterns.TemplateMethodPattern
+﻿using System.Diagnostics;
+
+namespace DesignPatterns.TemplateMethodPattern
 {
-    internal class TestTemplateMethodPattern : ITestState
+    internal class TestTemplateMethodPattern : ITestState, IUmlVeiwer
     {
         public void Test()
         {
             Console.WriteLine("Start TestTemplateMethodPattern Class\n");
+            ViewDiagram();
             Console.WriteLine("Problem");
             Console.WriteLine("// 1 problem: is code duplication every time i create this structure, add prop AuditTrail and initialize it on the constractor\n // 2 problem: there is no blueprint interface or abstract class to ensure that every Task class created on further will have an execute method or AuditTrail object\n");
             Console.WriteLine("Like this");
@@ -23,6 +26,30 @@
 
 
 
+        }
+
+        public void ViewDiagram()
+        {
+            string appDomin = AppDomain.CurrentDomain.BaseDirectory;
+            string imagePath = Path.Combine(appDomin, @"PatternUmlDiagram\TemplateMethodPattern.jpg");
+
+            // Check if the file exists
+            if (System.IO.File.Exists(imagePath))
+            {
+                try
+                {
+                    // Start the default image viewer process
+                    Process.Start("mspaint.exe", imagePath);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Error opening image: " + ex.Message);
+                }
+            }
+            else
+            {
+                Console.WriteLine("Image file not found: " + imagePath);
+            }
         }
     }
 }
