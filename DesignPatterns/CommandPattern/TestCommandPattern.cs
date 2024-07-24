@@ -1,4 +1,6 @@
-﻿namespace DesignPatterns.CommandPattern
+﻿using DesignPatterns.CommandPattern.Solution.fx;
+
+namespace DesignPatterns.CommandPattern
 {
     internal class TestCommandPattern : ITestState
     {
@@ -36,12 +38,14 @@
             Console.WriteLine("Problem");
             Console.WriteLine("// 1 problem: \n");
 
-            Console.WriteLine("Like this");
+            Console.WriteLine("Problem Code");
             Console.WriteLine("\n");
 
-            Console.WriteLine("solution");
-
-            Console.WriteLine("Like this");
+            Console.WriteLine("solution Code");
+            CustomerService customerService = new CustomerService();
+            AddCustomerCommand customerCommand = new(customerService);
+            Button button = new(customerCommand);
+            button.click();
             Console.WriteLine("\n");
         }
     }

@@ -1,4 +1,4 @@
-﻿namespace DesignPatterns.StatePattern
+﻿        namespace DesignPatterns.StatePattern
 {
     /// <summary>
     /// is the class that maintains an instance of a ConcreteState subclass, which defines the current state.
