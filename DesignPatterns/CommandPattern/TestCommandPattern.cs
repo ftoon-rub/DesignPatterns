@@ -21,6 +21,12 @@
             Console.WriteLine("***Look at the popup to see the pattern UML Diagram***");
             Console.WriteLine("\n");
 
+            Console.WriteLine("OOP principles used in this pattern");
+            Console.WriteLine("...");
+            Console.WriteLine("...");
+            Console.WriteLine("...");
+            Console.WriteLine("\n");
+
             Console.WriteLine("SOLID principles used in this pattern");
             Console.WriteLine("...");
             Console.WriteLine("...");
