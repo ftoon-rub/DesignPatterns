@@ -3,22 +3,23 @@
     internal abstract class Task
     {
         private AuditTrail _auditTrail;
-        public Task()
+        //GenerateReportTask use this constractor 
+        protected Task()
         {
             _auditTrail = new AuditTrail();
         }
-        public Task(AuditTrail auditTrail)
+        //TransferMoneyTask use this constractor 
+        protected Task(AuditTrail auditTrail)
         {
             _auditTrail = auditTrail;
         }
         public void execute()
         {
+            Console.WriteLine("Task execute");
             _auditTrail.record();
-              
             doExecute();
-            Console.WriteLine("Task solution");
         }
 
-        public abstract void doExecute();
+        protected abstract void doExecute();
     }
 }

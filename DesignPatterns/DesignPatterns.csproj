@@ -13,9 +13,19 @@
 
   <ItemGroup>
     <Folder Include="IteratorPattern\Exercises\" />
+    <Folder Include="PatternUmlDiagram\" />
     <Folder Include="StatePattern\Exercises\" />
     <Folder Include="TemplateMethodPattern\Main\" />
     <Folder Include="TemplateMethodPattern\Exercises\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="PatternUmlDiagram\TemplateMethodPattern.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="PatternUmlDiagram\TemplateMethodPattern.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

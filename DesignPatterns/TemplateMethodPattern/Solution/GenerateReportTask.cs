@@ -2,7 +2,8 @@
 {
     internal class GenerateReportTask : Task
     {
-        public override void doExecute()
+        //it use the defulte constrator from the base class
+        protected override void doExecute()
         {
             Console.WriteLine("GenerateReportTask solution");
         }

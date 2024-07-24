@@ -4,7 +4,7 @@
     {
         public void record()
         {
-            Console.WriteLine("AuditTrail solution");
+            Console.WriteLine("audit record");
         }
     }
 }
