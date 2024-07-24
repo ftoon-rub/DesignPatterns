@@ -12,7 +12,7 @@
         public void execute()
         {
             _auditTrail.record();
-            Console.WriteLine("Transfer Money");
+            Console.WriteLine("TransferMoneyTaskProblem");
         }
     }
 }

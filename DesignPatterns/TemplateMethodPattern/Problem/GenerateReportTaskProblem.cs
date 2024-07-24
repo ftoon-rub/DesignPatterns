@@ -14,7 +14,7 @@
         public void execute()
         {
             _auditTrail.record();
-            Console.WriteLine("Generate Report");
+            Console.WriteLine("GenerateReportTaskProblem");
         }
     }
 }
