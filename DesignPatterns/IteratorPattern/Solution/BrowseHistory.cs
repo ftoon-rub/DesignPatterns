@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 
-namespace DesignPatterns.IteratorPattern
+namespace DesignPatterns.IteratorPattern.Solution
 {
     internal class BrowseHistory
     {
@@ -40,7 +40,7 @@ namespace DesignPatterns.IteratorPattern
         }
         public void pushArrayUrls(string url)
         {
-            ArrayUrls[index++] = url; 
+            ArrayUrls[index++] = url;
         }
         public string popArrayUrls()
         {

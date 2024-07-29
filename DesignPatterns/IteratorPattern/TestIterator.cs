@@ -1,4 +1,5 @@
 ﻿using System;
+using DesignPatterns.IteratorPattern.Solution;
 
 namespace DesignPatterns.IteratorPattern
 {
@@ -11,7 +12,7 @@ namespace DesignPatterns.IteratorPattern
             history.pushListUrls("b");
             history.pushListUrls("c");
 
-            IIterator<string> iterator = history.createIteratorListUrls();
+            DesignPatterns.IteratorPattern.Solution.IIterator<string> iterator = history.createIteratorListUrls();
             Console.WriteLine("createIteratorListUrls");
             while (iterator.hasNext())
             {

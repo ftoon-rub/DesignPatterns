@@ -1,4 +1,4 @@
-﻿namespace DesignPatterns.IteratorPattern
+﻿namespace DesignPatterns.IteratorPattern.Solution
 {
     internal class ListIterator : IIterator<string>
     {
@@ -17,7 +17,7 @@
 
         public bool hasNext()
         {
-            return (index < _history.GetListUrls.Count);
+            return index < _history.GetListUrls.Count;
         }
 
         public void next()
