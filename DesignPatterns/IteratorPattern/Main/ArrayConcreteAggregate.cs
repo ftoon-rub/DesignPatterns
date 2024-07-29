@@ -9,7 +9,7 @@ namespace DesignPatterns.IteratorPattern.Main
 
         public IIterator<T> CreateIterator()
         {
-            return new ArrayIterator<T>(_array);
+            return new ArrayConcreteIterator<T>(_array);
         }
 
         public T Pop()

@@ -1,26 +1,27 @@
 ﻿namespace DesignPatterns.IteratorPattern.Main
 {
-    public class ListIterator<T> : IIterator<T>
+    public class ArrayConcreteIterator<T> : IIterator<T>
     {
-        private readonly List<T> _list;
+        private T[] _array;
         private int _index;
 
-        public ListIterator(List<T> list)
+        public ArrayConcreteIterator(T[] array)
         {
-            _list = list;
+            _array = array;
         }
-        public T Current => _list[_index];
+        public T Current => _array[_index];
 
         public bool HasNext()
         {
-            return (_index < _list.Count - 1);
+            return (_index < _array.Length - 1);
         }
 
         public T Next()
         {
             if (HasNext())
             {
-                return _list[++_index];
+                _index++;
+                return _array[_index];
             }
             return default(T);
         }

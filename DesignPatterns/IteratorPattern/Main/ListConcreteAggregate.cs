@@ -8,7 +8,7 @@ namespace DesignPatterns.IteratorPattern.Main
         public List<T> list { get { return _list; } set { _list = value; } }
         public IIterator<T> CreateIterator()
         {
-            return new ListIterator<T>(_list);
+            return new ListConcreteIterator<T>(_list);
         }
 
         public T Pop()
