@@ -1,6 +1,6 @@
 ﻿namespace DesignPatterns.CommandPattern
 {
-    internal interface ICommand
+    public interface ICommand
     {
         void execute();
     }

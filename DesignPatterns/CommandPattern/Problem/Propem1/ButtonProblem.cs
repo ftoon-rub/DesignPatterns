@@ -1,4 +1,4 @@
-﻿namespace DesignPatterns.CommandPattern
+﻿namespace DesignPatterns.CommandPattern.Problem.Propem1
 {
     internal class ButtonProblem
     {

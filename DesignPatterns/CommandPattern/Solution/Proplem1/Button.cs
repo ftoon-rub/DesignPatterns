@@ -1,6 +1,6 @@
-﻿namespace DesignPatterns.CommandPattern.Solution.fx
+﻿namespace DesignPatterns.CommandPattern.Solution.Proplem1
 {
-    internal class Button
+    public class Button
     {
         private string _lable;
         private ICommand command;
