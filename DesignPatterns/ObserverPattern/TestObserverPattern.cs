@@ -47,7 +47,12 @@
 
         public void TestDesignPatternProblem()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Without using Command DP it's violate multiple SOLID principles:  \n");
+            Console.WriteLine("- ");
+            Console.WriteLine("problem:\n- a \n");
+
+            Console.WriteLine("Problem Code");
+            Console.WriteLine("Problem ex1");
         }
 
         public void TestDesignPatternSolution()
