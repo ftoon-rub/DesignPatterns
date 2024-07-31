@@ -11,11 +11,11 @@ namespace DesignPatterns.CommandPattern
             Console.WriteLine("Start TestCommandPattern Class\n");
 
             Console.WriteLine("What is Behavioral Patterns?");
-            Console.WriteLine("...");
+            Console.WriteLine("Deal with how objects interact and communicate. They focus on algorithms and the assignment of responsibilities");
             Console.WriteLine("\n");
 
             Console.WriteLine("What is this pattern?");
-            Console.WriteLine("...");
+            Console.WriteLine("The Command Design Pattern is used to encapsulate a request as an object, thereby allowing for parameterization of clients with queues, requests, and operations. \nIt is useful when you need to decouple the object that invokes the operation from the one that knows how to perform it. \nThis pattern helps to follow the Single Responsibility Principle (SRP) by separating the responsibility of issuing a request from executing it.");
             Console.WriteLine("\n");
 
             Console.WriteLine("Pattern Components:");
@@ -32,9 +32,11 @@ namespace DesignPatterns.CommandPattern
             Console.WriteLine("\n");
 
             Console.WriteLine("SOLID principles used in this pattern");
-            Console.WriteLine("...");
-            Console.WriteLine("...");
-            Console.WriteLine("...");
+
+            Console.WriteLine("Single Responsibility Principle (SRP)");
+            Console.WriteLine("Open/Closed Principle (OCP)");
+            Console.WriteLine("Interface Segregation Principle (ISP)");
+            Console.WriteLine("Dependency Inversion Principle (DIP)");
             Console.WriteLine("\n");
 
             Console.WriteLine("Problem");
@@ -46,7 +48,9 @@ namespace DesignPatterns.CommandPattern
 
         public void TestDesignPatternProblem()
         {
-            Console.WriteLine("// 1 problem: \n");
+            Console.WriteLine("//problem:  a simple text editor application where users can type text, undo their typing, and redo it. Without the Command Pattern, the code can quickly become complex and difficult to maintain.\n");
+            Console.WriteLine("//Without using Command DP it's violate multiple SOLID principles:  \n");
+            Console.WriteLine("/Single Responsibility Principle (SRP): Methods like Type, Undo, and Redo have multiple responsibilities.\r\nOpen/Closed Principle (OCP): Adding new commands (like copy, paste) requires modifying the existing class.\r\nInterface Segregation Principle (ISP): All methods are in a single class, leading to a bloated interface.\n");
 
             Console.WriteLine("Problem Code");
             Console.WriteLine("Problem 2");
