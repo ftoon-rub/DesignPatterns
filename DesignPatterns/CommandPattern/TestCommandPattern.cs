@@ -19,16 +19,19 @@ namespace DesignPatterns.CommandPattern
             Console.WriteLine("\n");
 
             Console.WriteLine("Pattern Components:");
-            Console.WriteLine("...");
-            Console.WriteLine("...");
-            Console.WriteLine("...");
+            Console.WriteLine("Command Interface: Defines the method for executing commands.\r\n");
+            Console.WriteLine("Concrete Command: Implements the Command interface and defines the binding between the receiver and the action.\r\n");
+            Console.WriteLine("Receiver: Contains the actual business logic and operations.\r\n");
+            Console.WriteLine("Invoker: Stores and invokes commands.\r\n");
+            Console.WriteLine("Client: Configures the command objects and the invoker.\r\n");
             Console.WriteLine("***Look at the popup to see the pattern UML Diagram***");
             Console.WriteLine("\n");
 
             Console.WriteLine("OOP principles used in this pattern");
-            Console.WriteLine("...");
-            Console.WriteLine("...");
-            Console.WriteLine("...");
+            Console.WriteLine("Encapsulation of Requests: The Command Pattern encapsulates a request as an object, which includes both the operation to be performed and the receiver of the operation. This encapsulation allows the request to be treated as a first-class object, which can be passed around, stored, or executed.");
+            Console.WriteLine("Abstraction the Command interface provides an abstraction of the command operations. The client code interacts with the command objects via this interface, without needing to understand the specific details of the command execution.");
+            Console.WriteLine("Inheritance concrete Command Classes: Concrete Command classes inherit from the Command interface and implement the execute() method. This allows different concrete commands to be interchangeable as they adhere to the same interface.");
+            Console.WriteLine("Polymorphism command Execution: Different command objects can be used interchangeably through polymorphism. The Invoker interacts with the Command interface, and the specific command execution is handled by the concrete command objects.");
             Console.WriteLine("\n");
 
             Console.WriteLine("SOLID principles used in this pattern");
