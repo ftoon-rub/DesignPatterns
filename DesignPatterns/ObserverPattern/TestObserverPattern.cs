@@ -62,14 +62,18 @@ namespace DesignPatterns.ObserverPattern
 
         public void TestDesignPatternMain()
         {
+            // SOLID Principle: Open/Closed Principle (OCP)
+            // The system is open for extension (new observers can be added) but closed for modification (existing code doesn't need changes).
             ConcreteSubject subject = new ConcreteSubject();
 
             Main.IObserver<string> observerPush = new ConcreteObserverPush();
             Main.IObserver<string> observerPull = new ConcreteObserverPull(subject);
 
+            // Register observers with the subject
             subject.RegisterObserver(observerPush);
             subject.RegisterObserver(observerPull);
 
+            // Change the state of the subject, triggering notifications
             subject.State = "State 1";
             subject.State = "State 2";
         }
