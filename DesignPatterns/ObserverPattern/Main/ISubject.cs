@@ -3,6 +3,8 @@
     /// <summary>
     ///     SOLID Principle: Interface Segregation Principle (ISP)
     ///     This interface defines the contract for subjects in the Observer pattern, ensuring that classes only implement the methods they need.
+    ///     OOP Principle: Abstraction
+    ///     It defines the essential methods without exposing the implementation details.
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public interface ISubject<T>

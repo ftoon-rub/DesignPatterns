@@ -9,6 +9,9 @@ namespace DesignPatterns.ObserverPattern.Main
     /// <summary>
     /// SOLID Principle: Single Responsibility Principle (SRP)
     /// The ConcreteObserverPush class is responsible for receiving updates (data) from the subject in the push model.
+    /// OOP Principle: Inheritance and Polymorphism
+    /// The ConcreteObserverPush class inherits from the IObserver<T> interface and provides a specific implementation for the Push model.
+
 
     /// </summary>
     public class ConcreteObserverPush : IObserver<string>

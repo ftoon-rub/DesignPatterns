@@ -9,6 +9,9 @@ namespace DesignPatterns.ObserverPattern.Main
     /// <summary>
     /// SOLID Principle: Single Responsibility Principle (SRP)
     /// The ConcreteSubject class is responsible for managing its state and notifying observers when its state changes.
+    /// OOP Principle: Encapsulation
+    /// The ConcreteSubject class encapsulates its state and the list of observers.
+    /// It provides methods to interact with its state and manage observers without exposing internal details.
 
     /// </summary>
     public class ConcreteSubject : ISubject<string>
