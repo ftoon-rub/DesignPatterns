@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns.ChainOfResponsibilityPattern
+namespace DesignPatterns.ChainOfResponsibilityPattern.Main
 {
     internal class Class1
     {
