@@ -5,7 +5,7 @@ using DesignPatterns.BehavioralDesignPatterns.CommandPattern.Solution.Proplem2;
 
 namespace DesignPatterns.BehavioralDesignPatterns.CommandPattern
 {
-    internal class TestCommandPattern : ITestState, ITestProblemState, ITestSolutionState
+    internal class TestCommandPattern : TestTemplate
     {
         public void Test()
         {
@@ -50,7 +50,7 @@ namespace DesignPatterns.BehavioralDesignPatterns.CommandPattern
             TestDesignPatternSolution();
         }
 
-        public void TestDesignPatternProblem()
+        protected override void TestDesignPatternProblem()
         {
             Console.WriteLine("problem:\n- a simple text editor application where users can type text, undo their typing, and redo it. Without the Command Pattern, the code can quickly become complex and difficult to maintain.\n");
             Console.WriteLine("Without using Command DP it's violate multiple SOLID principles:  \n");
@@ -88,7 +88,7 @@ namespace DesignPatterns.BehavioralDesignPatterns.CommandPattern
             Console.WriteLine("\n");
         }
 
-        public void TestDesignPatternSolution()
+        protected override void TestDesignPatternSolution()
         {
             Console.WriteLine("Problem1");
 
@@ -117,5 +117,37 @@ namespace DesignPatterns.BehavioralDesignPatterns.CommandPattern
             Console.WriteLine(editor.GetText()); // Outputs: Hello World
 
         }
+
+        protected override void OopUsedInPattern()
+        {
+            throw new NotImplementedException();
+        }
+
+        protected override void PatternCategory()
+        {
+            throw new NotImplementedException();
+        }
+
+        protected override void PatternComponents()
+        {
+            throw new NotImplementedException();
+        }
+
+        protected override void PatternDescription()
+        {
+            throw new NotImplementedException();
+        }
+
+        protected override void SolidUsedInPattern()
+        {
+            throw new NotImplementedException();
+        }
+
+        protected override void TestDesignPatternMain()
+        {
+            throw new NotImplementedException();
+        }
+
+
     }
 }

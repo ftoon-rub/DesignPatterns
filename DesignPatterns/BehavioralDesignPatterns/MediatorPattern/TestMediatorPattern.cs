@@ -6,19 +6,44 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.BehavioralDesignPatterns.MediatorPattern
 {
-    internal class TestMediatorPattern : ITestState, ITestProblemState, ITestSolutionState
+    internal class TestMediatorPattern : TestTemplate
     {
-        public void Test()
+        protected override void OopUsedInPattern()
         {
             throw new NotImplementedException();
         }
 
-        public void TestDesignPatternProblem()
+        protected override void PatternCategory()
         {
             throw new NotImplementedException();
         }
 
-        public void TestDesignPatternSolution()
+        protected override void PatternComponents()
+        {
+            throw new NotImplementedException();
+        }
+
+        protected override void PatternDescription()
+        {
+            throw new NotImplementedException();
+        }
+
+        protected override void SolidUsedInPattern()
+        {
+            throw new NotImplementedException();
+        }
+
+        protected override void TestDesignPatternMain()
+        {
+            throw new NotImplementedException();
+        }
+
+        protected override void TestDesignPatternProblem()
+        {
+            throw new NotImplementedException();
+        }
+
+        protected override void TestDesignPatternSolution()
         {
             throw new NotImplementedException();
         }
