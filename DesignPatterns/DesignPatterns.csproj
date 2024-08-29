@@ -8,9 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="IteratorPattern\Exercises\**" />
-    <EmbeddedResource Remove="IteratorPattern\Exercises\**" />
-    <None Remove="IteratorPattern\Exercises\**" />
+    <Compile Remove="BehavioralDesignPatterns\IteratorPattern\Exercises\**" />
+    <EmbeddedResource Remove="BehavioralDesignPatterns\IteratorPattern\Exercises\**" />
+    <None Remove="BehavioralDesignPatterns\IteratorPattern\Exercises\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -18,15 +18,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="PatternUmlDiagram\" />
-    <Folder Include="StatePattern\Exercises\" />
+    <Folder Include="BehavioralDesignPatterns\PatternUmlDiagram\" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="PatternUmlDiagram\TemplateMethodPattern.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="PatternUmlDiagram\TemplateMethodPattern.png">
+    <None Update="BehavioralDesignPatterns\PatternUmlDiagram\TemplateMethodPattern.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
