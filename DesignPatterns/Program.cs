@@ -1,12 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using DesignPatterns;
-using DesignPatterns.CommandPattern;
-using DesignPatterns.IteratorPattern;
-using DesignPatterns.MementoPattern;
-using DesignPatterns.ObserverPattern;
-using DesignPatterns.StatePattern;
-using DesignPatterns.StrategyPattern;
-using DesignPatterns.TemplateMethodPattern;
 
 TestDesignPatterns test = new ();
 
@@ -42,9 +35,9 @@ TestDesignPatterns test = new ();
 //test.TestPatterns();
 //Console.WriteLine("\n\n");
 
-Console.WriteLine("******************TestObserverPattern********************");
-test.State = new TestObserverPattern();
-test.TestPatterns();
-Console.WriteLine("\n\n");
+//Console.WriteLine("******************TestObserverPattern********************");
+//test.State = new TestObserverPattern();
+//test.TestPatterns();
+//Console.WriteLine("\n\n");
 
 Console.ReadLine();
