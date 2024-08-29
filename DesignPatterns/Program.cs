@@ -2,7 +2,7 @@
 using DesignPatterns;
 using DesignPatterns.BehavioralDesignPatterns.VisitorPattern;
 
-TestDesignPatterns test = new ();
+TestState test = new ();
 
 //Console.WriteLine("******************TestMemento*********************");
 //test.State = new TestMemento();

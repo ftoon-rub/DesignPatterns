@@ -1,6 +1,6 @@
 ﻿namespace DesignPatterns
 {
-    internal class TestDesignPatterns
+    internal class TestState
     {
         private ITestState state;
 
