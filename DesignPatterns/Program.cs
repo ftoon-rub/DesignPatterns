@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using DesignPatterns;
+using DesignPatterns.BehavioralDesignPatterns.VisitorPattern;
 
 TestDesignPatterns test = new ();
 
@@ -39,5 +40,10 @@ TestDesignPatterns test = new ();
 //test.State = new TestObserverPattern();
 //test.TestPatterns();
 //Console.WriteLine("\n\n");
+
+Console.WriteLine("******************TestVisitorPattern********************");
+test.State = new TestVisitorPattern();
+test.TestPatterns();
+Console.WriteLine("\n\n");
 
 Console.ReadLine();

@@ -6,9 +6,18 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns
 {
-    public abstract class TestTemplate
+    public abstract class TestTemplate : ITestState
     {
-        public void DescribePattern()
+        protected abstract void PatternCategory();
+        protected abstract void PatternDescription();
+        protected abstract void PatternComponents();
+        protected abstract void SolidUsedInPattern();
+        protected abstract void OopUsedInPattern();
+        protected abstract void TestDesignPatternMain();
+        protected abstract void TestDesignPatternProblem();
+        protected abstract void TestDesignPatternSolution();
+
+        public void Test()
         {
             PatternCategory();
             PatternDescription();
@@ -19,13 +28,5 @@ namespace DesignPatterns
             TestDesignPatternProblem();
             TestDesignPatternSolution();
         }
-        protected abstract void PatternCategory();
-        protected abstract void PatternDescription();
-        protected abstract void PatternComponents();
-        protected abstract void SolidUsedInPattern();
-        protected abstract void OopUsedInPattern();
-        protected abstract void TestDesignPatternMain();
-        protected abstract void TestDesignPatternProblem();
-        protected abstract void TestDesignPatternSolution();
     }
 }

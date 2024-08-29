@@ -6,28 +6,46 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.BehavioralDesignPatterns.VisitorPattern
 {
-    public class TestVisitorPattern : ITestState, ITestMainState, ITestProblemState, ITestSolutionState
+    public class TestVisitorPattern : TestTemplate
     {
-        public void Test()
+        protected override void OopUsedInPattern()
         {
-            TestDesignPatternMain();
-            TestDesignPatternProblem();
-            TestDesignPatternSolution();
+            Console.WriteLine("******************OopUsedInPattern********************");
         }
 
-        public void TestDesignPatternMain()
+        protected override void PatternCategory()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("******************PatternCategory********************");
         }
 
-        public void TestDesignPatternProblem()
+        protected override void PatternComponents()
         {
-            throw new NotImplementedException();
+                Console.WriteLine("******************PatternComponents********************");
         }
 
-        public void TestDesignPatternSolution()
+        protected override void PatternDescription()
         {
-            throw new NotImplementedException();
+                        Console.WriteLine("******************PatternDescription********************");
+        }
+
+        protected override void SolidUsedInPattern()
+        {
+                        Console.WriteLine("******************SolidUsedInPattern********************");
+        }
+
+        protected override void TestDesignPatternMain()
+        {
+                        Console.WriteLine("******************TestDesignPatternMain********************");
+        }
+
+        protected override void TestDesignPatternProblem()
+        {
+                        Console.WriteLine("******************TestDesignPatternProblem********************");
+        }
+
+        protected override void TestDesignPatternSolution()
+        {
+                        Console.WriteLine("******************TestDesignPatternSolution********************");
         }
     }
 }
