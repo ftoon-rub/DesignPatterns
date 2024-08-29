@@ -1,5 +1,4 @@
-﻿using DesignPatterns.MementoPattern;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
 namespace DesignPatterns.BehavioralDesignPatterns.MementoPattern.Exercises
 {

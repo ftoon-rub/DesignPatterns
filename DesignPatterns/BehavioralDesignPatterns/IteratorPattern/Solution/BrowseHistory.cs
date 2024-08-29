@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using DesignPatterns.IteratorPattern.Solution;
-
-namespace DesignPatterns.BehavioralDesignPatterns.IteratorPattern.Solution
+﻿namespace DesignPatterns.BehavioralDesignPatterns.IteratorPattern.Solution
 {
     internal class BrowseHistory
     {

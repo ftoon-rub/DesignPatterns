@@ -1,7 +1,4 @@
-﻿using DesignPatterns.IteratorPattern.Main;
-using DesignPatterns.IteratorPattern.Solution;
-
-namespace DesignPatterns.BehavioralDesignPatterns.IteratorPattern.Main
+﻿namespace DesignPatterns.BehavioralDesignPatterns.IteratorPattern.Main
 {
     /// <summary>
     /// Represents a concrete collection that can be iterated over.

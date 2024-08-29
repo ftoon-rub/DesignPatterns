@@ -1,7 +1,5 @@
 ﻿using DesignPatterns.BehavioralDesignPatterns.StatePattern.Exercises.Abuse;
 using DesignPatterns.BehavioralDesignPatterns.StatePattern.Exercises.Ex4;
-using DesignPatterns.StatePattern.Exercises;
-using DesignPatterns.StatePattern.Exercises.Ex4;
 
 namespace DesignPatterns.BehavioralDesignPatterns.StatePattern
 {

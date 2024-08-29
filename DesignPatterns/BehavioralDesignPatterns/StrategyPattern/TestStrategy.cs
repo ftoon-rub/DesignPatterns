@@ -1,5 +1,4 @@
 ﻿using DesignPatterns.BehavioralDesignPatterns.StrategyPattern.Solution;
-using DesignPatterns.StrategyPattern;
 
 namespace DesignPatterns.BehavioralDesignPatterns.StrategyPattern
 {

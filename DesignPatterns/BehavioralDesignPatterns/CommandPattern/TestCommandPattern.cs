@@ -2,7 +2,6 @@
 using DesignPatterns.BehavioralDesignPatterns.CommandPattern.Solution;
 using DesignPatterns.BehavioralDesignPatterns.CommandPattern.Solution.Proplem1;
 using DesignPatterns.BehavioralDesignPatterns.CommandPattern.Solution.Proplem2;
-using DesignPatterns.CommandPattern.Solution.Proplem2;
 
 namespace DesignPatterns.BehavioralDesignPatterns.CommandPattern
 {
