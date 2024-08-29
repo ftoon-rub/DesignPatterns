@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns
 {
-    public abstract class TestTemplate<T> 
+    public abstract class TestTemplate
     {
         public void DescribePattern()
         {
