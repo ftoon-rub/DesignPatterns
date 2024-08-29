@@ -8,15 +8,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="IteratorPattern\Exercises\**" />
+    <EmbeddedResource Remove="IteratorPattern\Exercises\**" />
+    <None Remove="IteratorPattern\Exercises\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="IteratorPattern\Exercises\" />
     <Folder Include="PatternUmlDiagram\" />
     <Folder Include="StatePattern\Exercises\" />
-    <Folder Include="TemplateMethodPattern\Main\" />
-    <Folder Include="TemplateMethodPattern\Exercises\" />
   </ItemGroup>
 
   <ItemGroup>
