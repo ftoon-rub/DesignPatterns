@@ -1,39 +1,10 @@
 ﻿using DesignPatterns.BehavioralDesignPatterns.MementoPattern.Exercises.EX2;
+using DesignPatterns.BehavioralDesignPatterns.MementoPattern.Main;
 
 namespace DesignPatterns.BehavioralDesignPatterns.MementoPattern
 {
     public class TestMemento : TestBehavioralPatternsTemplate
     {
-        //public void Test()
-        //{
-
-
-        //    Caretaker caretaker = new();
-        //    Originator originator = new();
-
-        //    originator.SetContent("a");
-        //    caretaker.Save(originator);
-
-        //    originator.SetContent("c");
-        //    caretaker.Save(originator);
-
-        //    originator.SetContent("b");
-        //    caretaker.Save(originator);
-
-        //    caretaker.Undo(originator);
-
-        //    Document document = new Document();
-        //    DocumentHistory history = new DocumentHistory();
-
-        //    document.SetContent("a", "b", "c");
-        //    history.Save(document);
-
-        //    document.SetContent("d", "e", "f");
-        //    history.Save(document);
-
-        //    history.Undo(document);
-
-        //}
 
         protected override void OopUsedInPattern()
         {
@@ -68,7 +39,26 @@ namespace DesignPatterns.BehavioralDesignPatterns.MementoPattern
 
         protected override void TestDesignPatternMain()
         {
-            //throw new NotImplementedException();
+            // OOP: Abstraction - The exact details of how the state is saved and restored are abstracted away.
+            var originator = new Originator<string>();
+            var caretaker = new Caretaker<string>();
+
+            // Save states and undo
+            originator.State = "State 1";
+            caretaker.SaveState(originator); // State 1 saved
+
+            originator.State = "State 2";
+            caretaker.SaveState(originator); // State 2 saved
+
+            originator.State = "State 3";
+            Console.WriteLine($"Current State: {originator.State}");
+
+            caretaker.Undo(originator); // Undo to State 2
+            Console.WriteLine($"After Undo: {originator.State}");
+
+            caretaker.Undo(originator); // Undo to State 1
+            Console.WriteLine($"After Undo: {originator.State}");
+
         }
 
         protected override void TestDesignPatternProblem()
@@ -80,5 +70,36 @@ namespace DesignPatterns.BehavioralDesignPatterns.MementoPattern
         {
             //throw new NotImplementedException();
         }
+        //public void Test()
+        //{
+
+
+        //    Caretaker caretaker = new();
+        //    Originator originator = new();
+
+        //    originator.SetContent("a");
+        //    caretaker.Save(originator);
+
+        //    originator.SetContent("c");
+        //    caretaker.Save(originator);
+
+        //    originator.SetContent("b");
+        //    caretaker.Save(originator);
+
+        //    caretaker.Undo(originator);
+
+        //    Document document = new Document();
+        //    DocumentHistory history = new DocumentHistory();
+
+        //    document.SetContent("a", "b", "c");
+        //    history.Save(document);
+
+        //    document.SetContent("d", "e", "f");
+        //    history.Save(document);
+
+        //    history.Undo(document);
+
+        //}
+
     }
 }
