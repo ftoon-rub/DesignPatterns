@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.BehavioralDesignPatterns.VisitorPattern
 {
-    public class TestVisitorPattern : TestTemplate
+    public class TestVisitorPattern : TestBehavioralPatternsTemplate
     {
         protected override void OopUsedInPattern()
         {

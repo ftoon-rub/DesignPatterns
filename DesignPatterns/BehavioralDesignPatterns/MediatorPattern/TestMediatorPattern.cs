@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.BehavioralDesignPatterns.MediatorPattern
 {
-    internal class TestMediatorPattern : TestTemplate
+    internal class TestMediatorPattern : TestBehavioralPatternsTemplate
     {
         protected override void OopUsedInPattern()
         {

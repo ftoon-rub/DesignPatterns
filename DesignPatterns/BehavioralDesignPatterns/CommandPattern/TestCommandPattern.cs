@@ -5,7 +5,7 @@ using DesignPatterns.BehavioralDesignPatterns.CommandPattern.Solution.Proplem2;
 
 namespace DesignPatterns.BehavioralDesignPatterns.CommandPattern
 {
-    internal class TestCommandPattern : TestTemplate
+    internal class TestCommandPattern : TestBehavioralPatternsTemplate
     {
         public void Test()
         {

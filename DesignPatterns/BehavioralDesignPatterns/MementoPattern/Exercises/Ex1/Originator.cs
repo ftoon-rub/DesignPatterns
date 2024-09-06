@@ -1,4 +1,4 @@
-﻿namespace DesignPatterns.BehavioralDesignPatterns.MementoPattern
+﻿namespace DesignPatterns.BehavioralDesignPatterns.MementoPattern.Exercises.Ex1
 {
     /// <summary>
     /// creates a Memento containing a snapshot of its current internal state.

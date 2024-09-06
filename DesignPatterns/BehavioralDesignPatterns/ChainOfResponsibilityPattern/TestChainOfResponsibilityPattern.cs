@@ -6,26 +6,39 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.BehavioralDesignPatterns.ChainOfResponsibilityPattern
 {
-    public class TestChainOfResponsibilityPattern : ITestState, ITestMainState, ITestProblemState, ITestSolutionState
+    public class TestChainOfResponsibilityPattern : TestBehavioralPatternsTemplate
     {
-        public void Test()
-        {
-            TestDesignPatternMain();
-            TestDesignPatternProblem();
-            TestDesignPatternSolution();
-        }
-
-        public void TestDesignPatternMain()
+        protected override void OopUsedInPattern()
         {
             throw new NotImplementedException();
         }
 
-        public void TestDesignPatternProblem()
+        protected override void PatternComponents()
         {
             throw new NotImplementedException();
         }
 
-        public void TestDesignPatternSolution()
+        protected override void PatternDescription()
+        {
+            throw new NotImplementedException();
+        }
+
+        protected override void SolidUsedInPattern()
+        {
+            throw new NotImplementedException();
+        }
+
+        protected override void TestDesignPatternMain()
+        {
+            throw new NotImplementedException();
+        }
+
+        protected override void TestDesignPatternProblem()
+        {
+            throw new NotImplementedException();
+        }
+
+        protected override void TestDesignPatternSolution()
         {
             throw new NotImplementedException();
         }

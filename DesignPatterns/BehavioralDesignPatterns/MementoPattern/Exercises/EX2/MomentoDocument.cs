@@ -1,4 +1,4 @@
-﻿namespace DesignPatterns.BehavioralDesignPatterns.MementoPattern.Exercises
+﻿namespace DesignPatterns.BehavioralDesignPatterns.MementoPattern.Exercises.EX2
 {
     internal class MomentoDocument
     {
