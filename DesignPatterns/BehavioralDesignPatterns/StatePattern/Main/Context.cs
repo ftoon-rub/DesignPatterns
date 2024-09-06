@@ -1,4 +1,4 @@
-﻿namespace DesignPatterns.BehavioralDesignPatterns.StatePattern
+﻿namespace DesignPatterns.BehavioralDesignPatterns.StatePattern.Main
 {
     /// <summary>
     /// is the class that maintains an instance of a ConcreteState subclass, which defines the current state.
