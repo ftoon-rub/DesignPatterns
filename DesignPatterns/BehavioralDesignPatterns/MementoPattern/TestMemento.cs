@@ -1,5 +1,8 @@
-﻿using DesignPatterns.BehavioralDesignPatterns.MementoPattern.Exercises.EX2;
+﻿using DesignPatterns.BehavioralDesignPatterns.MementoPattern.Exercises.Ex1;
+using DesignPatterns.BehavioralDesignPatterns.MementoPattern.Exercises.EX2;
 using DesignPatterns.BehavioralDesignPatterns.MementoPattern.Main;
+using DesignPatterns.BehavioralDesignPatterns.MementoPattern.Problem;
+using DesignPatterns.BehavioralDesignPatterns.MementoPattern.Solution;
 
 namespace DesignPatterns.BehavioralDesignPatterns.MementoPattern
 {
@@ -70,43 +73,75 @@ namespace DesignPatterns.BehavioralDesignPatterns.MementoPattern
 
         protected override void TestDesignPatternProblem()
         {
-            //throw new NotImplementedException();
+            Console.WriteLine("\t- Problem Example: Text Editor with Undo Functionality\r\nScenario: You have a simple text editor where users can type text and you want to implement an undo feature. The text editor needs to be able to revert to previous versions of the text when the user performs an undo action.");
+            Console.WriteLine("\t -Issues:\r\nThe TextEditor class is responsible for both managing the text and handling the history of changes, which violates SRP.\r\nThe implementation is not easily extensible if you want to add more features, like redo functionality or saving multiple states.");
+            
+            var editor = new TextEditor();
+            editor.Type("First Version");
+            Console.WriteLine(editor); // Output: First Version
+
+            editor.Type("Second Version");
+            Console.WriteLine(editor); // Output: Second Version
+
+            editor.Undo();
+            Console.WriteLine(editor); // Output: First Version
+
+            editor.Undo();
+            Console.WriteLine(editor); // Output: (empty string)
         }
 
         protected override void TestDesignPatternSolution()
         {
-            //throw new NotImplementedException();
+            var editor = new TextEditorOriginator();
+            var history = new HistoryCaretaker();
+
+            editor.Type("First Version");
+            history.SaveState(editor);
+
+            Console.WriteLine(editor); // Output: First Version
+
+            editor.Type("Second Version");
+            history.SaveState(editor);
+
+            Console.WriteLine(editor); // Output: Second Version
+
+            history.Undo(editor);
+            Console.WriteLine(editor); // Output: First Version
+
+            history.Undo(editor);
+            Console.WriteLine(editor); // Output: (empty string)
+
         }
-        //public void Test()
-        //{
+        public void Exercises()
+        {
 
 
-        //    Caretaker caretaker = new();
-        //    Originator originator = new();
+            Caretaker caretaker = new();
+            Originator originator = new();
 
-        //    originator.SetContent("a");
-        //    caretaker.Save(originator);
+            originator.SetContent("a");
+            caretaker.Save(originator);
 
-        //    originator.SetContent("c");
-        //    caretaker.Save(originator);
+            originator.SetContent("c");
+            caretaker.Save(originator);
 
-        //    originator.SetContent("b");
-        //    caretaker.Save(originator);
+            originator.SetContent("b");
+            caretaker.Save(originator);
 
-        //    caretaker.Undo(originator);
+            caretaker.Undo(originator);
 
-        //    Document document = new Document();
-        //    DocumentHistory history = new DocumentHistory();
+            Document document = new Document();
+            DocumentHistory history = new DocumentHistory();
 
-        //    document.SetContent("a", "b", "c");
-        //    history.Save(document);
+            document.SetContent("a", "b", "c");
+            history.Save(document);
 
-        //    document.SetContent("d", "e", "f");
-        //    history.Save(document);
+            document.SetContent("d", "e", "f");
+            history.Save(document);
 
-        //    history.Undo(document);
+            history.Undo(document);
 
-        //}
+        }
 
     }
 }
