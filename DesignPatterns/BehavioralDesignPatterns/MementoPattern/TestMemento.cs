@@ -45,19 +45,26 @@ namespace DesignPatterns.BehavioralDesignPatterns.MementoPattern
 
             // Save states and undo
             originator.State = "State 1";
+            Console.WriteLine($"Current State: {originator.State}");
             caretaker.SaveState(originator); // State 1 saved
+            caretaker.HistoryContent();
 
             originator.State = "State 2";
+            Console.WriteLine($"Current State: {originator.State}");
             caretaker.SaveState(originator); // State 2 saved
+            caretaker.HistoryContent();
 
             originator.State = "State 3";
             Console.WriteLine($"Current State: {originator.State}");
+            caretaker.HistoryContent();
 
             caretaker.Undo(originator); // Undo to State 2
             Console.WriteLine($"After Undo: {originator.State}");
-
+            caretaker.HistoryContent();
+                    
             caretaker.Undo(originator); // Undo to State 1
             Console.WriteLine($"After Undo: {originator.State}");
+            caretaker.HistoryContent();
 
         }
 

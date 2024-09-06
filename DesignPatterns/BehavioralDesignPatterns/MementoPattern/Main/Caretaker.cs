@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DesignPatterns.BehavioralDesignPatterns.MementoPattern.Exercises.Ex1;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -42,6 +43,22 @@ namespace DesignPatterns.BehavioralDesignPatterns.MementoPattern.Main
             {
                 var memento = _history.Pop();
                 originator.RestoreState(memento);
+            }
+        }
+
+        public void HistoryContent()
+        {
+            if (_history.Count > 0)
+            {
+                Console.WriteLine("HistoryContent:");
+                foreach (var item in _history)
+                {
+                    Console.WriteLine($"_history State: {item.State}");
+                }
+            }
+            else
+            {
+                Console.WriteLine("_history is empty");
             }
         }
     }
