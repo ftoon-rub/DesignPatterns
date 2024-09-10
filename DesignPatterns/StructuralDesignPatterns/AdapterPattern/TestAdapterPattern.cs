@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DesignPatterns.StructuralDesignPatterns.AdapterPattern.Main;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -35,17 +36,27 @@ namespace DesignPatterns.StructuralDesignPatterns.AdapterPattern
 
         protected override void TestDesignPatternMain()
         {
-            throw new NotImplementedException();
+            // Creating an Adaptee object (Existing class with a different interface)
+            Adaptee adaptee = new Adaptee();
+
+            // Wrapping the Adaptee inside an Adapter to conform to the ITarget interface
+            ITarget target = new Adapter(adaptee);  // OCP: We are extending functionality without changing Adaptee or Client.
+
+            // Creating a Client object
+            Client client = new Client();
+
+            // The Client uses the Adapter (which conforms to ITarget) to call the adapted method.
+            client.MakeRequest(target);  // Polymorphism & Abstraction in action
         }
 
         protected override void TestDesignPatternProblem()
         {
-            throw new NotImplementedException();
+            Console.WriteLine(nameof(TestDesignPatternProblem) + "method in progress");
         }
 
         protected override void TestDesignPatternSolution()
         {
-            throw new NotImplementedException();
+            Console.WriteLine(nameof(TestDesignPatternSolution) + "method in progress");
         }
     }
 }

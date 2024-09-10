@@ -3,6 +3,7 @@ using DesignPatterns;
 using DesignPatterns.BehavioralDesignPatterns.MementoPattern;
 using DesignPatterns.BehavioralDesignPatterns.StatePattern;
 using DesignPatterns.BehavioralDesignPatterns.VisitorPattern;
+using DesignPatterns.StructuralDesignPatterns.AdapterPattern;
 using DesignPatterns.StructuralDesignPatterns.CompositePattern;
 
 TestState test = new ();
@@ -51,6 +52,11 @@ Console.WriteLine("******************TestStructuralDesignPatternsTemplate*******
 
 Console.WriteLine("******************TestCompositeDesignPattern********************");
 test.State = new TestCompositeDesignPattern();
+test.TestPatterns();
+Console.WriteLine("\n\n");
+
+Console.WriteLine("******************TestAdapterPattern********************");
+test.State = new TestAdapterPattern();
 test.TestPatterns();
 Console.WriteLine("\n\n");
 
