@@ -3,18 +3,16 @@ using DesignPatterns;
 using DesignPatterns.BehavioralDesignPatterns.MementoPattern;
 using DesignPatterns.BehavioralDesignPatterns.StatePattern;
 using DesignPatterns.BehavioralDesignPatterns.VisitorPattern;
+using DesignPatterns.StructuralDesignPatterns.CompositePattern;
 
 TestState test = new ();
+
+Console.WriteLine("******************TestBehavioralPatternsTemplate*********************");
 
 //Console.WriteLine("******************TestMemento*********************");
 //test.State = new TestMemento();
 //test.TestPatterns();
 //Console.WriteLine("\n\n");
-
-Console.WriteLine("******************TestState********************");
-test.State = new TestStatePattarn();
-test.TestPatterns();
-Console.WriteLine("\n\n");
 
 //Console.WriteLine("******************TestIterator********************");
 //test.State = new TestIterator();
@@ -47,5 +45,13 @@ Console.WriteLine("\n\n");
 //test.State = new TestVisitorPattern();
 //test.TestPatterns();
 //Console.WriteLine("\n\n");
+
+//
+Console.WriteLine("******************TestStructuralDesignPatternsTemplate********************");
+
+Console.WriteLine("******************TestCompositeDesignPattern********************");
+test.State = new TestCompositeDesignPattern();
+test.TestPatterns();
+Console.WriteLine("\n\n");
 
 Console.ReadLine();
