@@ -5,6 +5,7 @@ using DesignPatterns.BehavioralDesignPatterns.StatePattern;
 using DesignPatterns.BehavioralDesignPatterns.VisitorPattern;
 using DesignPatterns.StructuralDesignPatterns.AdapterPattern;
 using DesignPatterns.StructuralDesignPatterns.CompositePattern;
+using DesignPatterns.StructuralDesignPatterns.DecoratorPattern;
 
 TestState test = new ();
 
@@ -58,6 +59,11 @@ Console.WriteLine("\n\n");
 
 Console.WriteLine("******************TestAdapterPattern********************");
 test.State = new TestAdapterPattern();
+test.TestPatterns();
+Console.WriteLine("\n\n");
+
+Console.WriteLine("******************TestDecoratorPattern********************");
+test.State = new TestDecoratorPattern();
 test.TestPatterns();
 Console.WriteLine("\n\n");
 
