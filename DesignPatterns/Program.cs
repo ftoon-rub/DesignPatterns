@@ -1,19 +1,20 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using DesignPatterns;
 using DesignPatterns.BehavioralDesignPatterns.MementoPattern;
+using DesignPatterns.BehavioralDesignPatterns.StatePattern;
 using DesignPatterns.BehavioralDesignPatterns.VisitorPattern;
 
 TestState test = new ();
 
-Console.WriteLine("******************TestMemento*********************");
-test.State = new TestMemento();
-test.TestPatterns();
-Console.WriteLine("\n\n");
-
-//Console.WriteLine("******************TestState********************");
-//test.State = new TestState();
+//Console.WriteLine("******************TestMemento*********************");
+//test.State = new TestMemento();
 //test.TestPatterns();
 //Console.WriteLine("\n\n");
+
+Console.WriteLine("******************TestState********************");
+test.State = new TestStatePattarn();
+test.TestPatterns();
+Console.WriteLine("\n\n");
 
 //Console.WriteLine("******************TestIterator********************");
 //test.State = new TestIterator();
