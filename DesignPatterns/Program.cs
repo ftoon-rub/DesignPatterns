@@ -8,7 +8,7 @@ using DesignPatterns.StructuralDesignPatterns.CompositePattern;
 
 TestState test = new ();
 
-Console.WriteLine("******************TestBehavioralPatternsTemplate*********************");
+//Console.WriteLine("******************TestBehavioralPatternsTemplate*********************");
 
 //Console.WriteLine("******************TestMemento*********************");
 //test.State = new TestMemento();
@@ -49,6 +49,7 @@ Console.WriteLine("******************TestBehavioralPatternsTemplate*************
 
 //
 Console.WriteLine("******************TestStructuralDesignPatternsTemplate********************");
+Console.WriteLine();
 
 Console.WriteLine("******************TestCompositeDesignPattern********************");
 test.State = new TestCompositeDesignPattern();
