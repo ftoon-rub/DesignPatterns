@@ -14,8 +14,8 @@ namespace DesignPatterns
         protected abstract void SolidUsedInPattern();
         protected abstract void OopUsedInPattern();
         protected abstract void TestDesignPatternMain();
-        protected abstract void TestDesignPatternProblem();
-        protected abstract void TestDesignPatternSolution();
+        //protected abstract void TestDesignPatternProblem();
+        //protected abstract void TestDesignPatternSolution();
 
         public void Test()
         {
@@ -45,11 +45,9 @@ namespace DesignPatterns
 
             Console.WriteLine();
             Console.WriteLine("* Problem needs this pattern");
-            TestDesignPatternProblem();
 
             Console.WriteLine();
             Console.WriteLine("* Solution of this problem by this Design pattern");
-            TestDesignPatternSolution();
         }
     }
 }

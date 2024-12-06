@@ -49,12 +49,12 @@ namespace DesignPatterns.StructuralDesignPatterns.AdapterPattern
             client.MakeRequest(target);  // Polymorphism & Abstraction in action
         }
 
-        protected override void TestDesignPatternProblem()
+        protected void TestDesignPatternProblem()
         {
             Console.WriteLine(nameof(TestDesignPatternProblem) + "method in progress");
         }
 
-        protected override void TestDesignPatternSolution()
+        protected void TestDesignPatternSolution()
         {
             Console.WriteLine(nameof(TestDesignPatternSolution) + "method in progress");
         }
