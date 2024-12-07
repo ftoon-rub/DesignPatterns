@@ -14,6 +14,7 @@ namespace DesignPatterns
         protected abstract void SolidUsedInPattern();
         protected abstract void OopUsedInPattern();
         protected abstract void TestDesignPatternMain();
+        protected abstract void Ex1();
         //protected abstract void TestDesignPatternProblem();
         //protected abstract void TestDesignPatternSolution();
 
