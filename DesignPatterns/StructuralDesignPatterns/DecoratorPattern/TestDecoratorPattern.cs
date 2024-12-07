@@ -9,6 +9,11 @@ namespace DesignPatterns.StructuralDesignPatterns.DecoratorPattern
 {
     public class TestDecoratorPattern : TestStructuralDesignPatternsTemplate
     {
+        protected override void Ex1()
+        {
+            throw new NotImplementedException();
+        }
+
         protected override void OopUsedInPattern()
         {
             Console.WriteLine("\t- Encapsulation: The decorator pattern encapsulates the extended behaviors by wrapping the Component and adding new behaviors.");
@@ -53,12 +58,12 @@ namespace DesignPatterns.StructuralDesignPatterns.DecoratorPattern
             // Dependency Inversion Principle (SOLID): The program depends on abstractions (IMessage) rather than concrete implementations.
         }
 
-        protected override void TestDesignPatternProblem()
+        protected void TestDesignPatternProblem()
         {
             Console.WriteLine(nameof(TestDesignPatternProblem) + "method in progress");
         }
 
-        protected override void TestDesignPatternSolution()
+        protected void TestDesignPatternSolution()
         {
             Console.WriteLine(nameof(TestDesignPatternSolution) + "method in progress");
         }

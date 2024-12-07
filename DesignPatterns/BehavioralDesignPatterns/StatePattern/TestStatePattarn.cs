@@ -35,6 +35,11 @@ namespace DesignPatterns.BehavioralDesignPatterns.StatePattern
             #endregion
         }
 
+        protected override void Ex1()
+        {
+            throw new NotImplementedException();
+        }
+
         protected override void OopUsedInPattern()
         {
             Console.WriteLine("\t- Encapsulation: The State pattern encapsulates state-specific behaviors and transitions into separate classes, hiding the complexity from the Context class.");
@@ -69,12 +74,12 @@ namespace DesignPatterns.BehavioralDesignPatterns.StatePattern
             throw new NotImplementedException();
         }
 
-        protected override void TestDesignPatternProblem()
+        protected void TestDesignPatternProblem()
         {
             throw new NotImplementedException();
         }
 
-        protected override void TestDesignPatternSolution()
+        protected void TestDesignPatternSolution()
         {
             throw new NotImplementedException();
         }

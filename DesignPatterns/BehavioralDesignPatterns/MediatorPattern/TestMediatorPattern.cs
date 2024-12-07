@@ -8,6 +8,11 @@ namespace DesignPatterns.BehavioralDesignPatterns.MediatorPattern
 {
     internal class TestMediatorPattern : TestBehavioralPatternsTemplate
     {
+        protected override void Ex1()
+        {
+            throw new NotImplementedException();
+        }
+
         protected override void OopUsedInPattern()
         {
             throw new NotImplementedException();
@@ -38,12 +43,12 @@ namespace DesignPatterns.BehavioralDesignPatterns.MediatorPattern
             throw new NotImplementedException();
         }
 
-        protected override void TestDesignPatternProblem()
+        protected void TestDesignPatternProblem()
         {
             throw new NotImplementedException();
         }
 
-        protected override void TestDesignPatternSolution()
+        protected void TestDesignPatternSolution()
         {
             throw new NotImplementedException();
         }

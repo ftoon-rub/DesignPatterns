@@ -9,6 +9,11 @@ namespace DesignPatterns.StructuralDesignPatterns.CompositePattern
 {
     public class TestCompositeDesignPattern : TestStructuralDesignPatternsTemplate
     {
+        protected override void Ex1()
+        {
+            throw new NotImplementedException();
+        }
+
         protected override void OopUsedInPattern()
         {
             Console.WriteLine("\t- Encapsulation:\r\nEach component (Leaf, Composite) encapsulates its own behavior. Composite also encapsulates the management of child components.\r\nAbstraction:\r\n\r\nThe Component abstract class provides a common interface for all objects in the hierarchy, allowing abstraction over different types of components (Leaf and Composite).\r\nPolymorphism:\r\n\r\nLeaf and Composite classes implement the same interface (Component) but behave differently, enabling polymorphism.\r\nInheritance:\r\n\r\nLeaf and Composite inherit from the Component abstract class, gaining its interface and behavior. This allows code reusability and flexibility.");
@@ -58,12 +63,12 @@ namespace DesignPatterns.StructuralDesignPatterns.CompositePattern
             root.Display(1);
         }
 
-        protected override void TestDesignPatternProblem()
+        protected void TestDesignPatternProblem()
         {
             Console.WriteLine(nameof(TestDesignPatternProblem) + "method in progress");
         }
 
-        protected override void TestDesignPatternSolution()
+        protected void TestDesignPatternSolution()
         {
             Console.WriteLine(nameof(TestDesignPatternSolution) + "method in progress");
         }

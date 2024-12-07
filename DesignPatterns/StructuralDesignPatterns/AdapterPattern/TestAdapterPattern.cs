@@ -9,6 +9,11 @@ namespace DesignPatterns.StructuralDesignPatterns.AdapterPattern
 {
     public class TestAdapterPattern : TestStructuralDesignPatternsTemplate
     {
+        protected override void Ex1()
+        {
+            throw new NotImplementedException();
+        }
+
         protected override void OopUsedInPattern()
         {
             Console.WriteLine("\t- Encapsulation: The Adapter encapsulates the Adaptee, hiding its interface from the Client.");

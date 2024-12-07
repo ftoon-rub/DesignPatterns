@@ -4,6 +4,11 @@ namespace DesignPatterns.BehavioralDesignPatterns.ObserverPattern
 {
     public class TestObserverPattern : TestBehavioralPatternsTemplate
     {
+        protected override void Ex1()
+        {
+            throw new NotImplementedException();
+        }
+
         //public void Test()
         //{
         //    Console.WriteLine("Start TestObserverPattern Class\n");
@@ -117,12 +122,12 @@ namespace DesignPatterns.BehavioralDesignPatterns.ObserverPattern
             throw new NotImplementedException();
         }
 
-        protected override void TestDesignPatternProblem()
+        protected void TestDesignPatternProblem()
         {
             throw new NotImplementedException();
         }
 
-        protected override void TestDesignPatternSolution()
+        protected void TestDesignPatternSolution()
         {
             throw new NotImplementedException();
         }

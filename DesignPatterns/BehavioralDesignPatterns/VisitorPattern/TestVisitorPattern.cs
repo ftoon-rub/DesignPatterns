@@ -8,6 +8,11 @@ namespace DesignPatterns.BehavioralDesignPatterns.VisitorPattern
 {
     public class TestVisitorPattern : TestBehavioralPatternsTemplate
     {
+        protected override void Ex1()
+        {
+            throw new NotImplementedException();
+        }
+
         protected override void OopUsedInPattern()
         {
             Console.WriteLine("******************OopUsedInPattern********************");
@@ -38,12 +43,12 @@ namespace DesignPatterns.BehavioralDesignPatterns.VisitorPattern
                         Console.WriteLine("******************TestDesignPatternMain********************");
         }
 
-        protected override void TestDesignPatternProblem()
+        protected void TestDesignPatternProblem()
         {
                         Console.WriteLine("******************TestDesignPatternProblem********************");
         }
 
-        protected override void TestDesignPatternSolution()
+        protected void TestDesignPatternSolution()
         {
                         Console.WriteLine("******************TestDesignPatternSolution********************");
         }

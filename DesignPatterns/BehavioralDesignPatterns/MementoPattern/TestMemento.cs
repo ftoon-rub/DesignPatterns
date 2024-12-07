@@ -71,7 +71,7 @@ namespace DesignPatterns.BehavioralDesignPatterns.MementoPattern
 
         }
 
-        protected override void TestDesignPatternProblem()
+        protected void TestDesignPatternProblem()
         {
             Console.WriteLine("\t- Problem Example: Text Editor with Undo Functionality\r\nScenario: You have a simple text editor where users can type text and you want to implement an undo feature. The text editor needs to be able to revert to previous versions of the text when the user performs an undo action.");
             Console.WriteLine("\t -Issues:\r\nThe TextEditor class is responsible for both managing the text and handling the history of changes, which violates SRP.\r\nThe implementation is not easily extensible if you want to add more features, like redo functionality or saving multiple states.");
@@ -90,7 +90,7 @@ namespace DesignPatterns.BehavioralDesignPatterns.MementoPattern
             Console.WriteLine(editor); // Output: (empty string)
         }
 
-        protected override void TestDesignPatternSolution()
+        protected void TestDesignPatternSolution()
         {
             var editor = new TextEditorOriginator();
             var history = new HistoryCaretaker();
@@ -143,5 +143,9 @@ namespace DesignPatterns.BehavioralDesignPatterns.MementoPattern
 
         }
 
+        protected override void Ex1()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

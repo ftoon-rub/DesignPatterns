@@ -50,7 +50,7 @@ namespace DesignPatterns.BehavioralDesignPatterns.CommandPattern
             TestDesignPatternSolution();
         }
 
-        protected override void TestDesignPatternProblem()
+        protected void TestDesignPatternProblem()
         {
             Console.WriteLine("problem:\n- a simple text editor application where users can type text, undo their typing, and redo it. Without the Command Pattern, the code can quickly become complex and difficult to maintain.\n");
             Console.WriteLine("Without using Command DP it's violate multiple SOLID principles:  \n");
@@ -88,7 +88,7 @@ namespace DesignPatterns.BehavioralDesignPatterns.CommandPattern
             Console.WriteLine("\n");
         }
 
-        protected override void TestDesignPatternSolution()
+        protected void TestDesignPatternSolution()
         {
             Console.WriteLine("Problem1");
 
@@ -148,6 +148,9 @@ namespace DesignPatterns.BehavioralDesignPatterns.CommandPattern
             throw new NotImplementedException();
         }
 
-
+        protected override void Ex1()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
