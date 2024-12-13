@@ -20,7 +20,6 @@
   <ItemGroup>
     <Folder Include="BehavioralDesignPatterns\PatternUmlDiagram\" />
     <Folder Include="CreationalDesignPatterns\PrototypePattern\Exercises\Ex1\" />
-    <Folder Include="CreationalDesignPatterns\SingletonPattern\Main\" />
   </ItemGroup>
 
   <ItemGroup>
