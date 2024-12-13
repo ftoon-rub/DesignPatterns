@@ -40,8 +40,9 @@ namespace DesignPatterns.CreationalDesignPatterns.PrototypePattern
             {
                 age = 26,
                 name = "ftoon",
-                skills = new List<string> { "C#","sql server"}
+                skills = new List<string> { "C#","sql server"},
             };
+            original.setGender("female");
 
             Console.WriteLine("original: " +original.ToString());
 
