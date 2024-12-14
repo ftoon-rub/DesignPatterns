@@ -4,6 +4,7 @@ using DesignPatterns.BehavioralDesignPatterns.MementoPattern;
 using DesignPatterns.BehavioralDesignPatterns.StatePattern;
 using DesignPatterns.BehavioralDesignPatterns.VisitorPattern;
 using DesignPatterns.CreationalDesignPatterns.PrototypePattern;
+using DesignPatterns.CreationalDesignPatterns.SingletonPattern;
 using DesignPatterns.StructuralDesignPatterns.AdapterPattern;
 using DesignPatterns.StructuralDesignPatterns.CompositePattern;
 using DesignPatterns.StructuralDesignPatterns.DecoratorPattern;
@@ -76,12 +77,23 @@ if (false)
 
 if (true)
 {
-    Console.WriteLine("******************TestCreationalDesignPatternsTemplate********************");
-    Console.WriteLine();
-    Console.WriteLine("******************TestPrototypePattern********************");
-    test.State = new TestPrototypePattern();
-    test.TestPatterns();
-    Console.WriteLine("\n\n");
+        Console.WriteLine("******************TestCreationalDesignPatternsTemplate********************");
+        Console.WriteLine();
+    if (false)
+    {
+        Console.WriteLine("******************TestPrototypePattern********************");
+        test.State = new TestPrototypePattern();
+        test.TestPatterns();
+        Console.WriteLine("\n\n");
+    }
+    if (true)
+    {
+        Console.WriteLine("******************TestSingletonPattern********************");
+        test.State = new TestSingletonPattern();
+        test.TestPatterns();
+        Console.WriteLine("\n\n");
+
+    }
 }
 
 
