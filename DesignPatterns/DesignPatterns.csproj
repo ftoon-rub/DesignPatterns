@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <Folder Include="BehavioralDesignPatterns\PatternUmlDiagram\" />
+    <Folder Include="CreationalDesignPatterns\FactoryMethodPattern\Exercises\" />
     <Folder Include="CreationalDesignPatterns\PrototypePattern\Exercises\Ex1\" />
   </ItemGroup>
 

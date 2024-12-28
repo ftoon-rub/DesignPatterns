@@ -3,6 +3,7 @@ using DesignPatterns;
 using DesignPatterns.BehavioralDesignPatterns.MementoPattern;
 using DesignPatterns.BehavioralDesignPatterns.StatePattern;
 using DesignPatterns.BehavioralDesignPatterns.VisitorPattern;
+using DesignPatterns.CreationalDesignPatterns.FactoryMethodPattern;
 using DesignPatterns.CreationalDesignPatterns.PrototypePattern;
 using DesignPatterns.CreationalDesignPatterns.SingletonPattern;
 using DesignPatterns.StructuralDesignPatterns.AdapterPattern;
@@ -86,10 +87,18 @@ if (true)
         test.TestPatterns();
         Console.WriteLine("\n\n");
     }
-    if (true)
+    if (false)
     {
         Console.WriteLine("******************TestSingletonPattern********************");
         test.State = new TestSingletonPattern();
+        test.TestPatterns();
+        Console.WriteLine("\n\n");
+
+    }
+    if (true)
+    {
+        Console.WriteLine("******************TestFactoryMethodPattern********************");
+        test.State = new TestFactoryMethodPattern();
         test.TestPatterns();
         Console.WriteLine("\n\n");
 
